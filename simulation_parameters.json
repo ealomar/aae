@@ -1,0 +1,147 @@
+{
+  "seed": 2026,
+  "N": 150,
+  "exposure_correlation": 0.116,
+  "paths": {
+    "ENG": {
+      "AI_EXP": 0.406,
+      "AN_EXP": 0.373,
+      "AU_EXP": 0.432
+    },
+    "PERF": {
+      "AI_EXP": 0.336,
+      "AN_EXP": 0.161,
+      "AU_EXP": 0.09,
+      "ENG": 0.269
+    },
+    "CT": {
+      "AN_EXP": 0.323,
+      "ENG": 0.384
+    },
+    "DS": {
+      "AU_EXP": 0.34,
+      "ENG": 0.425
+    },
+    "SAT": {
+      "AI_EXP": 0.186,
+      "AN_EXP": 0.164,
+      "AU_EXP": 0.091,
+      "ENG": 0.318
+    }
+  },
+  "prior_exposure_noise_sd": 2.0,
+  "level_effect_on": {
+    "CT": 0.1,
+    "DS": 0.08
+  },
+  "lms_eng_copula_r": 0.45,
+  "items": {
+    "AI_EXP": 5,
+    "AN_EXP": 5,
+    "AU_EXP": 5,
+    "ENG": 6,
+    "CT": 4,
+    "DS": 4,
+    "SAT": 4
+  },
+  "target_alpha": {
+    "AI_EXP": 0.84,
+    "AN_EXP": 0.82,
+    "AU_EXP": 0.86,
+    "ENG": 0.88,
+    "CT": 0.8,
+    "DS": 0.83,
+    "SAT": 0.85
+  },
+  "target_mean": {
+    "AI_EXP": 3.68,
+    "AN_EXP": 3.54,
+    "AU_EXP": 3.29,
+    "ENG": 3.74,
+    "CT": 3.62,
+    "DS": 3.7,
+    "SAT": 3.81
+  },
+  "target_sd": {
+    "AI_EXP": 0.82,
+    "AN_EXP": 0.79,
+    "AU_EXP": 0.85,
+    "ENG": 0.76,
+    "CT": 0.71,
+    "DS": 0.74,
+    "SAT": 0.69
+  },
+  "perf_target_mean": 78.45,
+  "perf_target_sd": 8.62,
+  "composition": {
+    "ACL": {
+      "1": 60,
+      "2": 60,
+      "3": 30
+    },
+    "GEN": {
+      "1": 78,
+      "2": 72
+    },
+    "FOS": {
+      "1": 102,
+      "2": 48
+    },
+    "PRIOR_AI": 92,
+    "PRIOR_AN": 87,
+    "PRIOR_AU": 69,
+    "MODE": {
+      "1_online": 46,
+      "2_blended": 64,
+      "3_classroom": 40
+    },
+    "AGE": {
+      "18-21": 38,
+      "22-25": 64,
+      "26-30": 32,
+      "30+": 16
+    }
+  },
+  "item_calibration": {
+    "AI_EXP": {
+      "item_location": 3.7513,
+      "item_scale": 1.158,
+      "loading": 0.7443
+    },
+    "AN_EXP": {
+      "item_location": 3.5804,
+      "item_scale": 1.0944,
+      "loading": 0.7181
+    },
+    "AU_EXP": {
+      "item_location": 3.3083,
+      "item_scale": 1.0926,
+      "loading": 0.7722
+    },
+    "ENG": {
+      "item_location": 3.7914,
+      "item_scale": 1.029,
+      "loading": 0.7713
+    },
+    "CT": {
+      "item_location": 3.6415,
+      "item_scale": 0.9093,
+      "loading": 0.7354
+    },
+    "DS": {
+      "item_location": 3.7308,
+      "item_scale": 0.9386,
+      "loading": 0.7711
+    },
+    "SAT": {
+      "item_location": 3.8356,
+      "item_scale": 0.8488,
+      "loading": 0.7963
+    }
+  },
+  "source_dataset": {
+    "citation": "Hasan, Palaniappan, Mahmood, Abbas, Sarker (2021), Data 6(11):110, doi:10.3390/data6110110",
+    "PERF_anchor": "empirical quantiles of (CW1+CW2)/2, n=326, mean=50.59, sd=22.41",
+    "LMS_anchor": "empirical percentile of Online C + Online O, n=326"
+  }
+}
